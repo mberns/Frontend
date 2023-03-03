@@ -1,1 +1,170 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+body {
+    /* background-color: lightskyblue; */
+    background-color: snow;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1400px;
+    margin: auto;
+}
+
+header .container  { /*los conatainers del header (los hijos, no solo los directos, todos)*/
+    /* justify-content:space-evenly; */
+    justify-content:space-around;
+    background-color: snow;
+}
+
+
+h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    color: deeppink; /*poner otro rosado, este no es, pero bueno*/
+}
+
+#mi-nombre {
+    border: 2px solid snow;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#banner h1 { /*primero el padre, despues el hijo*/
+    color: snow;
+}
+
+#logo1b {
+    font-weight: 700;
+    color:deepskyblue;
+}
+
+#logo1 {/*encierra al logo0 y al logo 1b*/
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    padding: 10px 10px;/*arriba&abajo - costados-> no me cambia en nada porque esta centrado*/
+}
+
+#logo2 {
+    color: black;
+    font-weight: 700;
+}
+
+#banner {
+    background-color: lightgreen;
+    padding: 10px; /*le pongo esto porque sino me deja un espacio entre secciones*/
+    height: 80vh;
+    /* width: 80%; -> si pongo esto no se como centrarlo despues */
+    margin: 0px 100px; /*con esto me deja 100px de distancia a cada borde*/
+    display: flex;
+    /*no entiendo bien la diferencia entre los 3 que siguen*/
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;/*me pone los titulos uno debajo del otro*/
+    background-image: linear-gradient(
+        0deg,
+        hotpink 1%,
+        rgba(255,175,218, 0.3)
+
+    )
+    ,url("imgs/img6.jpg"); /*como le cambio el tamaño a la img desde aca? es posible?*/
+    
+}
+
+#acerca-de {
+    background-color:snow;
+    padding: 10px; /*lo mismo*/
+    
+}
+
+p {
+    text-justify: auto;
+}
+
+#acerca-de p {
+    margin: 0px 100px;
+    text-align: center;
+}
+
+#experiencia {
+    background-color:lightgrey;
+    padding: 10px; /*se lo agrego a todos asi queda parejo*/
+}
+
+#experiencia .container{ /*esto no anda - revisar*/ 
+    margin: 0px 100px;
+    width: 80%;
+
+}
+
+#experiencia .container {
+    display: flex;
+    /*gap mete un espacio entre los elementos del container*/
+    gap: 20px; /*estaria bueno que esto sea variable, tengo que revisar las unidades*/
+}
+
+#educacion {
+    background-color:snow;
+    padding: 10px;
+}
+
+#hard-and-soft-skills {
+    background-color: lightgray;
+    padding: 10px;
+    
+}
+
+#proyectos {
+    background-color:snow;
+    padding: 10px;
+    
+}
+
+#login {
+    background-color: lightgray;
+    padding: 10px;
+    
+}
+
+footer {
+    background-color: hotpink;
+    padding: 10px;
+    
+}
+
+button { /*este es el login de arriba*/
+    background-color: rgb(255, 175, 218);
+    color: snow;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 7px 12px 7px 12px;
+    /* padding: 10px 7px 10px 7px; */
+}
+
+/*cuando al boton le paso por encima con el cursor pasa esto*/
+button:hover { 
+    background-color:hotpink;
+}
+
+ul {
+    list-style: none;
+}
+
+
+#banner h2{
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    color: snow;
+}
